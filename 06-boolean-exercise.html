@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <button onclick="
+  let hour = showCurrentHour();
+ 
+ function showCurrentHour() {
+  const currentTime = new Date();
+    const hour = currentTime.getHours();
+    console.log('Current Time is: ' + hour + ' and ');
+}
+var name = 'Gajanan';
+
+if (hour >=6 && hour <=12){
+  console.log(`Good Morning : ${name}
+  `)}
+else if(hour >=13 && 17){
+  console.log(`Good Afternoon ${name}`);
+
+}
+else {
+ console.log( `Good Night ${name} !! ` );
+}   
+    ">hour</button>
+
+    <button onclick="
+    let age= pickuingAge(3, 25);
+    function pickuingAge(min, max){
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    console.log(age);
+    if ( age >= 3 && age <= 10 ){
+      console.log('50 % Discount !!');
+    }
+
+    else if ( age >= 11 && age <= 18 ){
+      console.log('25 % Discount !!');
+    }
+
+   else {
+    console.log('10 % discount ');
+   }
+    ">age</button>
+
+  <script>
+
+
+  </script>
+  
+</body>
+</html>
